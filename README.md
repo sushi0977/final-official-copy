@@ -33,7 +33,7 @@ Once created a chat-room stores all the data (messages sent to the room, who has
 |20|Achieve **50%** or more code coverage on *unit-tests*|
 |05|Use *MySQL* to store data for the chat-rooms|
 |05|Use *Redis* to store the user data|
-|10|Turn-in a **README.md** file that defines your ReST API (Webservice) end-points|
+|10|Turn-in markdown file(s) that defines your ReST API (Webservice) end-points|
 |15|All features work|
 |15|All end-points work|
 |20|Have integration tests for all the end-points|
