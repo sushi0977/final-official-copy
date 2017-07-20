@@ -1,0 +1,27 @@
+//Get
+rooms/list  -- this is get as we are trying to pull what avaliable rooms are on the server
+rooms/{room name}/Userlist -- display list of useres in the room
+rooms/{room name}/status
+rooms/{room name}  -- should display all message
+
+//post/put
+rooms/create/{room name}
+rooms/join/{room name} --Json file username, email
+rooms/{room Name}
+
+//delete
+rooms/leave/{room name} -- this removes the user from the email list. 
+
+Database requirements. 
+Table
+chatmessage
+(MessageID, RoomID, userID, date/time, message)
+
+chatroom
+(roomID, datecreated, name, status)
+
+chatusers
+(roomid, userID)
+
+users
+(userID, UUID, Username, emailaddress)
