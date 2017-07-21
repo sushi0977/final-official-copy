@@ -1,5 +1,5 @@
 ## Room Join
-Connects to Chat room and list lates messages
+Connects to Chat room and list latest messages
 
 
 ### Headers
@@ -15,7 +15,7 @@ Connects to Chat room and list lates messages
 - **numberOfmessages** - Expected number of messages to display (limited by the configuation of max messages to display)
 
 ### Response
-- ** Message Array ** - List of messages of the last number of message depending on configuration
+- **Message Array** - List of messages of the last number of message depending on configuration
 
 ### Errors
 - **ErrorCode1** - No Room exsits Please create new room
