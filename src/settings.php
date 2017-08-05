@@ -7,12 +7,5 @@
  */
 class settings
 {
-    protected $conf;
 
-    public function __construct()
-    {
-        $this->setConf();
-    }
-
-    
 }
