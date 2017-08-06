@@ -6,12 +6,11 @@
  * Time: 2:10 PM
  */
 
-namespace domain;
-
+namespace Domain;
 
 use PHPUnit\Runner\Exception;
 
-class user
+class User
 {
     protected $userID;
     protected $uuid;
@@ -26,22 +25,19 @@ class user
 
     public function setUsername($username)
     {
-        if(empty($username))
-        {
-            Throw new Exception("We don't have a username");
+        if (empty($username)) {
+            throw new Exception("We don't have a username");
         }
         $this->username = $username;
         return $this;
     }
 
-    public function setEmail( $email)
+    public function setEmail($email)
     {
-        if(!filter_var($email,FILTER_VALIDATE_EMAIL))
-        {
-            throw new \Exception("Not a valid email Address");
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            throw new Exception("Not a valid email Address");
         }
         $this->email = $email;
-
         return $this;
     }
 
@@ -57,13 +53,11 @@ class user
 
     public function setUserID($userID)
     {
-        if(!is_numeric($userID))
-        {
-            Throw new \Exception("not a valid numeric value " . $userID);
+        if (!is_numeric($userID)) {
+            throw new Exception("not a valid numeric value " . $userID);
         }
         $this->userID = $userID;
         return $this;
-
     }
 
     public function getUUID()
@@ -77,11 +71,10 @@ class user
     }
     public function setUUID($uuid)
     {
-        if(empty($uuid))
-        {
-            throw new \Exception("Null UUID was passed");
+        if (empty($uuid)) {
+            throw new Exception("Null UUID was passed");
         }
-
+        $this->uuid = $uuid;
+        return $this;
     }
-
 }

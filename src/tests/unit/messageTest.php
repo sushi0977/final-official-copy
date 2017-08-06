@@ -30,7 +30,6 @@ class messageTest extends \Codeception\Test\Unit
         $user = new \domain\user();
 
         $user->setUsername("Bobsimpsons")->setEmail("email@email.com")->setUserID(1);
-        $obj->setUserID($user->getUserID());
         $obj->setUser($user);
         try {
             $time = new DateTime();
@@ -44,8 +43,8 @@ class messageTest extends \Codeception\Test\Unit
         $user = null;
         $this->assertNull($user);
         //checks if the users object is set with the message class.
-        $this->assertEquals("Bobsimsons",$obj->getUser()->getUsername());
-        $this->assertEquals("1",$obj->getUserID());
+        $this->assertEquals("Bobsimpsons",$obj->getUser()->getUsername());
+        $this->assertEquals("1",$obj->userID());
         $this->assertEquals("This is some Message we might want to string shit.",$obj->getMessage());
         $this->assertStringMatchesFormat('%s',$obj->getTimestamp());
         $this->assertEquals('1',$obj->getMessageID());

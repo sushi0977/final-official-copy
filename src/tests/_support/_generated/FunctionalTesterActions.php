@@ -26,7 +26,8 @@ trait FunctionalTesterActions
      * @param string $message
      * @see \Codeception\Module::assertArraySubset()
      */
-    public function assertArraySubset($subset, $array, $strict = null, $message = null) {
+    public function assertArraySubset($subset, $array, $strict = null, $message = null)
+    {
         return $this->getScenario()->runStep(new \Codeception\Step\Action('assertArraySubset', func_get_args()));
     }
 }

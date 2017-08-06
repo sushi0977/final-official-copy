@@ -8,3 +8,12 @@ actor_suffix: Tester
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
+coverage:
+    enable: true
+    include:
+        - domain/*
+        - plugins/*
+        - storage/*
+        - public/*
+        - plugins/*
+        - config/*
