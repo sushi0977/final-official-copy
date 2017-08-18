@@ -5,6 +5,7 @@ class userTest extends \Codeception\Test\Unit
 {
     /**
      * @var \UnitTester
+     * lisa Tokunaga
      */
     protected $tester;
 
